@@ -6,7 +6,6 @@ class Timetabling:
         self.time_slots = time_slots
         self.constraints = constraints
         self.schedule = {}
-        self.energy_usage = 0   
 
     def is_valid_assignment(self, course, professor, room, time_slot):
         # Check specific room constraints

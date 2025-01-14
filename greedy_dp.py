@@ -1,11 +1,9 @@
-# Inputs
 courses = [("Math101", 30), ("CS102", 60), ("Bio201", 50)]  # (course, students)
 rooms = [("R1", 50), ("R2", 100)]  # (room, capacity)
 time_slots = [1, 2, 3]  # Time slots: 9:00-10:00, 10:00-11:00, 11:00-12:00
 prof_availability = {"Math101": [2, 3], "CS102": [1, 2], "Bio201": [1, 3]}  # Professors' availability
 conflicts = [("CS102", "Bio201")]  # Courses that cannot overlap
 
-# Sorting rooms (Greedy Choice)
 rooms.sort(key=lambda x: x[1])  # Sort rooms by capacity (small to large)
 
 # DP Table: Initialize
